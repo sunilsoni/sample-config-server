@@ -55,11 +55,11 @@
         </dependency>
 	</dependencies>
 
-  <properties>
+  <!-- <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <start-class>com.jci.config.server.ConfigServerApplication</start-class> 
     <java.version>1.8</java.version>
-  </properties>
+  </properties> -->
   
     <build>
         <plugins>
