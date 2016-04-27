@@ -6,4 +6,16 @@ spring:
           uri: https://github.com/sunilsoni/sample-config-server
 
 server:
-  port: 8888          
+  port: 8888
+  
+---
+spring:
+  profiles: peer
+eureka:
+  instance:
+    hostname: ${APP_NAME}.herokuapp.com
+  client:
+    registerWithEureka: true
+    fetchRegistry: true
+    serviceUrl:
+      defaultZone: ${EUREKA_PEER_URL}/eureka/          
